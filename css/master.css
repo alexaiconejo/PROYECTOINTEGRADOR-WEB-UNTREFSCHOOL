@@ -1,0 +1,392 @@
+    /*color: #FC7300; naranja;
+    color: #1F8A70;verde;
+    color: #00425A; azul;
+     color: #181823; negro;
+     color: #EFF5F5; blanco;*/
+
+/*== CSS GLOBAL==*/
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600;700&family=Poppins:ital,wght@0,400;1,200;1,400&display=swap');    
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EFF5F5;
+}
+
+img{
+    width: 100%
+}
+
+ul{
+    list-style-type:none;
+
+}
+
+article{
+    width: 70%;
+    margin-top: 40px;
+
+}
+
+h1{
+
+font-size: 30px;
+font-family:  'Belanosima', sans-serif;
+
+}
+
+h2{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20PX;
+    
+}
+
+h3{
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+    padding: 20px;
+}
+
+h4{
+    font-size: 25px;
+    font-family: 'Belanosima', sans-serif;
+}
+
+p{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+   text-align: justify;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-size: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#opcionesMenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*== Encabezado==*/
+#encabezado{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+    height: 80px;
+    background-color: #00425A;
+    color: #EFF5F5;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    padding-right: 5px;
+    
+}
+
+#logoImg{
+    padding: 15px;
+    height: 60px;
+    width: 100%;
+display: grid;
+grid-template-columns: 1fr;
+    filter: invert();
+}
+
+
+ul#opcionesMenu li a{
+    color: #EFF5F5;
+
+
+}
+
+.opcionesMenuBox{
+    border: 2px;
+    border-color: #EFF5F5;
+}
+
+/*==Banner==*/
+
+#banner{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+        
+}
+
+.bannerImg{
+    filter: saturate(85%);
+    }
+
+#tituloBanner{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    background-color:rgba(255,255,255,0.5);
+    text-align: center;
+    color: #00425A;
+
+    
+}
+
+/*==Sección quienes somos==*/
+#quienesSomos{
+
+}
+
+#imgQuienesSomos{
+    background-image: url(./../img/UntrefSchool.jpg);
+    background-size: cover;
+}
+
+
+.contenidosFormato{
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+   
+
+
+}
+.contenidosFormato2{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+
+
+}
+
+.contenidosP{
+    padding-bottom: 30px;
+}
+
+/*==Sección Por qué elegirnos==*/
+#eleginos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FC7300;
+    color: #EFF5F5;
+    
+}
+
+#imgEleginos{
+    background-image: url(./../img/UntrefSchool\ Clase\ Participativa.jpg);
+    background-size: cover;
+    background-position: 60%;
+    
+}
+
+/*== sección Propuestas ==*/
+
+#propuestaEducativa{
+    text-align: center;
+    color: #EFF5F5;
+    padding-top: 55px;
+    border-radius: 55px;
+    margin: 13px;
+
+background-color: #00425A;
+
+
+
+}
+#propuestasList{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+}
+
+
+
+/*== sección Noticias ==*/
+
+#ultimasNoticias{
+    height: 75vh;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.noticiaPlacas{
+    padding: 40px;
+    background-color:rgba(255, 255, 255,0.8);
+}
+
+#noticia1{
+    background-image: url(./../img/UntrefSchool\ Instalaciones.jpg);
+    background-size: cover;
+
+}
+
+#noticia2{
+    background-image: url(./../img/UntrefSchool\ Graduación.jpg);
+    background-size: cover;
+}
+
+.contenidoN{
+    padding: 0px;
+    padding-top: 10px;
+}
+
+/*== Pie de Pagina  ==*/
+
+footer{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/*== Responsive==*/
+
+@media (min-width: 768px){
+
+    /*== Tablet h==*/
+    h1{
+    font-size: 80px;
+    }
+
+    h2{
+        font-size: 50px;
+        padding: 50px;
+        padding-left: 30px;
+    }
+
+    h3{
+        font-size: 27px;   
+     }
+
+    p{
+        font-size: 23px;
+
+    }
+
+    h4{
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    a{
+        font-size: 15px;
+    }
+
+    /*== Tablet HEADER==*/
+
+    #encabezado{
+        padding-right: 25px;
+        height: 110px;
+    }
+
+    #logoImg{
+        padding: 15px;
+        padding-left: 40px;
+        height: 75px;
+        width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+   
+
+     /*== Tablet CONTENIDOS==*/
+    .contenidosFormato{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        height: 40vh;
+        padding-right: 20px;
+
+    
+    
+    }
+    .contenidosFormato2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+         height: 40vh;
+         padding-left: 20px;
+    
+    
+    }
+
+            /*== Tablet PROPUESTAS==*/
+
+    #propuestasList{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        text-align: center;
+        justify-items: center;
+        padding-bottom: 40px;
+    }
+
+    #propuestaEducativa{
+
+        border-radius: 75px;
+        margin: 25px;
+        margin-top: 80px;
+
+    }
+
+            /*== Tablet NOTICIAS==*/
+
+
+
+    #ultimasNoticias{
+        height: 50vh;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   
+    }
+    .noticiaPlacas{
+        height: 350px;
+        margin: 30px;
+        margin-top: 90px;
+    }
+
+    .contenidosP{
+    padding: 50px;
+    }
+
+    
+   /* #encabezado{
+        display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 1000 ;}*/
+
+    #opcionesMenu{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
