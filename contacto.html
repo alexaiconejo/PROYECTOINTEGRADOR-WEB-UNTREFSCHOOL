@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/master.css">
+
 </head>
 <body>
-    
+    <div id="main">
+        <div id="pagina">
+         <h1 id="titulo">CONECTÁ CON UNTREFSCHOOL</h1>
+
+         <form action="formData.php" method="post" id="formulario">
+
+         <div>
+            <label for="nombre"> <h3>     Nombre completo
+            </h3></label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu respuesta" maxlength="35">
+         </div>
+         <div>
+            <label for="mail"> <h3>Mail
+            </h3></label>
+            <input type="email" name="mail" id="mail" required placeholder="Escribe tu respuesta" maxlength="35">
+         </div>
+            <div>
+            <label for="estudiante"> <h3>  ¿Eres estudiante en UntrefSchol?
+            </h3></label>
+            <fieldset name="estudiantes" id="estudiantes">
+                <input type="radio" name="estudiante" id="estudiante" required value="si">Si
+                <input type="radio" name="estudiante" id="estudiante" value="no">No
+         
+
+            </fieldset>
+            </div>   
+
+         <div>
+            <label for="Mensaje"> <h3>     Mensaje
+            </h3></label>
+            <textarea name="mensaje" id="mensaje" required placeholder="Escribe tu mensaje" maxlength="300"></textarea>
+         </div>
+
+         <div>
+            <input type="submit"  id="boton" value="ENVIAR">
+
+         </div>
+
+        </form>
+            
+
+        </div>
+
+    </div>
 </body>
 </html>

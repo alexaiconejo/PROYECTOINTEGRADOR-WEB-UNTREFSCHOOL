@@ -221,12 +221,16 @@ background-color: #00425A;
     justify-items: center;
 }
 
+.imgPropuestas{
+    border-radius: 360px;
+}
+
 
 
 /*== sección Noticias ==*/
 
 #ultimasNoticias{
-    height: 75vh;
+    height: 120vh;
     
     display: grid;
     grid-template-columns: 1fr;
@@ -255,11 +259,22 @@ background-color: #00425A;
 
 /*== Pie de Pagina  ==*/
 
-footer{
+#pieDePagina{
+    width: 100%;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 
+}
+
+#contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#untrefDir{
+    font-size: 10px;
 }
 
 /*== Responsive==*/
@@ -390,3 +405,27 @@ footer{
     }
 }
 
+/* --CSS CONTACTO -- */
+
+#main{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #FC7300;
+}
+
+#pagina{
+    margin: 20px;
+    margin-top: 50px;
+    background-color: #EFF5F5;
+    padding: 30px;
+}
+
+input{
+    font-family: poppins;
+    color: #00425A;
+    border-radius: 15px;
+    padding: 5px;
+    width: 260px;
+}
