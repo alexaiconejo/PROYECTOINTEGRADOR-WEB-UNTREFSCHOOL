@@ -152,9 +152,6 @@ ul#opcionesMenu li a{
 }
 
 /*==Sección quienes somos==*/
-#quienesSomos{
-
-}
 
 #imgQuienesSomos{
     background-image: url(./../img/UntrefSchool.jpg);
@@ -264,20 +261,67 @@ background-color: #00425A;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    background-color: #FC7300;
+    align-content: center;
+    justify-content: center;
+
+     
+
+}
+
+.logosRedes{
+height: 30px;
+width: 30px;
+filter: invert();
+}
+
+ul#linkContacto li a, #contacto, #untrefDir{
+    text-decoration: none;
+    font-size: 10px;
+
+    color: #EFF5F5;
+    text-align: center;
 
 }
 
 #contacto{
     display: grid;
     grid-template-columns: 1fr;
+    padding-left: 20px;
+}
+
+#tituloContacto{
+    padding: 0;
 }
 
 #untrefDir{
     font-size: 10px;
+    text-align: center;
+    padding: 0;
 }
 
+#redesSociales{display: grid;
+    align-items: center;
+    gap: 6px;
+    grid-template-columns: 1fr;
+}
+
+#mapa{
+    width: 160px;
+    height: 100px;
+
+}
+
+#instituto{
+    display: grid;
+    gap: 5px;
+}
+
+
+
 /*== Responsive==*/
+
+/*== tablet==*/
 
 @media (min-width: 768px){
 
@@ -405,27 +449,47 @@ background-color: #00425A;
     }
 }
 
-/* --CSS CONTACTO -- */
+/*=== TV 1200px===*/
+@media (min-width: 1200px) { 
 
-#main{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
 
-    background-color: #FC7300;
+    /*TV Noticias*/
+    #ultimasNoticias{
+        height: 50vh;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .noticiaPlacas{
+        height: 350px;
+        margin: 0px;
+        margin-top: 300px;
 }
 
-#pagina{
-    margin: 20px;
-    margin-top: 50px;
-    background-color: #EFF5F5;
-    padding: 30px;
-}
 
-input{
-    font-family: poppins;
-    color: #00425A;
-    border-radius: 15px;
-    padding: 5px;
-    width: 260px;
+        /*TV PROPUESTAS*/
+
+    #propuestasList{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-bottom: 40px;
+    }
+
+    #imgEleginos{
+        background-size: 100%;
+        back
+
+    }
+
+
+    #pieDePagina{
+        z-index: 1000;
+        height: 250px;
+        width: 100%;
+        margin-top: 250px;
+       
+    
+         
+    
+    }
 }
